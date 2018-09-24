@@ -1,7 +1,7 @@
 /*
 This file includes C++ implementations of various spike train metrics, as used in the following paper:
 
-C. V. Rusu and R. V. Florian (2013), A new class of metrics for spike trains. arXiv:1209.2918.
+Rusu, C. V., & Florian, R. V. (2014). A new class of metrics for spike trains. Neural Computation, 26(2), 306â€“348. doi:10.1162/NECO_a_00545
 
 */
 #pragma once
@@ -13,7 +13,7 @@ C. V. Rusu and R. V. Florian (2013), A new class of metrics for spike trains. ar
 typedef std::vector<double> SPIKE_TRAIN;
 
 /* Schreiber et al. distance - Schreiber, S., Fellous, J., Whitmer, D., Tiesinga, P. and Sejnowski, T. (2003), 'A
-new correlation-based measure of spike timing reliability', Neurocomputing 52–54, 925-931.*/
+new correlation-based measure of spike timing reliability', Neurocomputing 52â€“54, 925-931.*/
 
 double s_measure (SPIKE_TRAIN T1, SPIKE_TRAIN T2, double a, double b) {
     //T1 and T2 are ordered, nonempty sets of real numbers, indexed starting from 0.
@@ -272,7 +272,7 @@ double vr_measure (SPIKE_TRAIN T1, SPIKE_TRAIN T2, double a, double b) {
     return dv;
 }
 
-/*  Van Rossum distance - Algorithm from Houghton, C. and Kreuz, T. (2012), 'On the efficient calculation of van Rossum distances', Network: Computation in Neural Systems 23, 48–58. */
+/*  Van Rossum distance - Algorithm from Houghton, C. and Kreuz, T. (2012), 'On the efficient calculation of van Rossum distances', Network: Computation in Neural Systems 23, 48â€“58. */
 
 void markage(std::vector<double> & f, std::vector<double> & train,double tau){
     int train_size=train.size();
